@@ -1,9 +1,10 @@
-img{
+img {
     border: 180px;
     height: 100px;
     margin-top: 10px;
-    width:90px;
+    width: 90px;
 }
+
 footer {
     padding: 30px 0;
     clear: both;
@@ -11,61 +12,137 @@ footer {
     color: #ffffff;
     color: #cccccc;
     text-align: center;
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
+    background: rgb(31, 47, 82);
+    border-top: 8px solid#aa4a4ae3;
     height: 50px;
-  }
+}
+.navbar{
+    background:white;
+    margin-top: 15px;
+ 
+}
 
-  #img1{
-      width: 100%;
-   height: 400px;
-  } 
 
-  #slider{
-      overflow: hidden;
 
-  }
-  #slider figure{
-position: relative;
-width: 100%;
-margin:0;
-left: 0;
-animation: 60s slider infinite;
-  }
+.img1 {
+    width: 100%;
+    height: 400px;
+}
+.img001{
+    height: 400px;
+    width: 100%;
+}
 
-  #slider figure img {
+.img02{
+    height: 400px;
+}
+.img03{
+    height: 400px;
+}
+.img04{
+    height: 400px;
+}
+#slider{
+    overflow: hidden;
+    height: 400px;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin:0;
+    left: 0;
+    animation: 30s slider infinite
+}
+
+ #slider figure img {
       width: 20%;
       float: left;
   }
 
+
+
+
   @keyframes slider {
-      0%{
-          left: 0;
-      }
-      25%{
-          left:0;
-      }
-      25%{
-          left: -100%
-      }
-      45%{
-         left: -100%;
-      }
-      50%{
-        left: -200%;
-     }
-     70%{
-        left: -200%;
-     }
-     75%{
-         left: -300;
-     }
-     95%{
-        left: -300%;
-     }
-     100%{
-         left: -3000;
-     }
-  }
- 
- 
+    0% {
+        left: 0;
+    
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%
+    }
+    345% {
+        left: -100%;
+    }
+    50% {
+        left: -200;
+    }
+    70% {
+        left: -200;
+
+    }
+    75%{
+        left:-300;
+    }
+    95%{
+        left: -300;
+    }
+    100%{
+        left: -400
+    }
+} */
+
+
+/* 
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+slider>* {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide :nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide :nth-child(2) {
+    left: 0%;
+    animation-delay: 2s;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide :nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(th.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* slide p {
+    font-family: comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+

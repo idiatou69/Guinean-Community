@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Guinean community</title>
+
 </head>
 
 <body>
-
     <div class="container">
         <div class="row">
             <div class="col-sm-3"> <img src="./assets/images/imageGuineaLogo.PNG" alt="logo"></div>
@@ -26,7 +28,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="#">Home </a>
                             </li>
                             <li class="nav-item">
@@ -40,32 +42,39 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </nav> 
             </div>
         </div>
-        <div class="row">
-            <slider>
+        <p>Labor Justice hospitality</p>
+        <div class="carousel carousel-slider" id="demo-carousel-content" data-indicators="true">
 
-                <slide> <img src="./assets/images/img1.jpg" id="img1"></slide>
-                <slide><img src="./assets/images/img2.jpg"></slide>
-                <slide> <img src="./assets/images/th.jpg"></slide>
+            <a class="carousel-item" href="#one!"><img src="./assets/images/img1.jpg" class="img001"></a>
 
-            </slider>
+
+            <div class="carousel-fixed-item center">
+                <h1 class="white-text">Welcome to the Guinean Community</h1>
+            </div>
+
+            <a class="carousel-item" href="#two!"><img src="assets/images/img2.jpg" class="img02">
+            </a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/th.jpg" class="img03">
+            </a>
+
         </div>
-        <div class="row">
+        <br>
+
+    <div class="row">
             How can you help our community?
-        </div>
+        </div><br>
 
         <div class="row">
             Donate Today?
-        </div>
+        </div><br>
         <div class="row">
-            How can you help our community?
-        </div>
+            volunteer?
+        </div><br>
 
     </div>
-
-
 
     </div>
     <footer>
@@ -74,12 +83,83 @@
         </div>
     </footer>
 
+    <script>
+        $(document).ready(function () {
+            $('#demo-carousel-content').carousel();
+            setInterval(function () {
+                $('#demo-carousel-content').carousel('next');
+            }, 2000);
+
+        });
+    </script>
     <!-- <JQuery/> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="./assets/javascript/index.js"></script>
     <script src="./assets/javascript/newsLetter.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Guinean community</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+           
+        </div>
+
+<div id="slider">
+<figure>
+    <h1>Welcome to the Guinean community</h1>
+    <img src="./assets/images/img1.jpg" class="img0">
+    <img src="./assets/images/img2.jpg " class="img02">
+    <img src="./assets/images/th.jpg" class="img03">
+    <img src="./assets/images/img1.jpg" class="img04" >
+</figure>
+</div>
+
+        <!-- <div class="carousel carousel-slider" id="demo-carousel-content" data-indicators="true">
+
+            <img src="./assets/images/img1.jpg" class="img1">
+            <a class="carousel-item" href="#two!"><img src="./assets/images/img1.jpg">
+            </a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/img2.jpg">
+            </a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/th.jpg">
+            </a>
+          <br>
+          <br>
+        </div> -->
+
+</div>
+
+
+
+
 </body>
 
 </html>
